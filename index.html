@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    </header>
 <img src="assets/images/carro.jpg.jpg" alt="Carro à venda">
 <h1>AutoMais - Loja de Carros</h1>
 <p>Encontre carros novos e usados com qualidade e segurança.</p>
+</header>
+<main> 
+    <section>
+        <h2>tipos de carros</h2>
 <ul>
     <li>Carros novos</li>
     <li>Carros seminovos</li>
     <li>Carros usados</li>
 </ul>
+</section>  
+<section
 <h2>Carros disponíveis</h2>
-
 <table>
     <tr>
         <th>Carro</th>
@@ -31,6 +37,43 @@
         <td>R$ 135.000</td>
     </tr>
 </table>
+</section>
+<section>
+    <h2>Entre em contato</h2>
+
+    <form>
+        <fieldset>
+            <legend>Dados do cliente</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="telefone" required>
+<label for="ano">Ano do carro:</label>
+<input type="number" id="ano" name="ano" min="2000" max="2026">
+<label for="carro">Escolha o carro:</label>
+<select id="carro" name="carro" required>
+    <option value="">Selecione</option>
+    <option value="civic">Honda Civic</option>
+    <option value="corolla">Toyota Corolla</option>
+    <option value="onix">Chevrolet Onix</option>
+    <option value="hb20">Hyundai HB20</option>
+</select>
+<p>Tipo de negociação:</p>
+<label for="compra">Compra:</label>
+<input type="radio" id="compra" name="negociacao" value="compra" required>
+<label for="financiamento">Financiamento:</label>
+<input type="radio" id="financiamento" name="negociacao" value="financiamento">
+<label for="troca">Troca:</label>
+<input type="radio" id="troca" name="negociacao" value="troca">
+        </fieldset>
+        <button type="submit">Enviar formulário</button>
+        <button type="button" aria-label="Fechar formulário">✕</button>
+    </form>
+</section>
 <p>
     <a href="https://www.honda.com.br/" target="_blank" rel="noopener noreferrer">
         Visite o site da Honda
@@ -39,5 +82,9 @@
 <p>
     <a href="#" class="botao">Entre em contato</a>
 </p>
+</main>
+<footer
+    <p>© 2026 AutoMais - Loja de Carros</p>
+</footer>
 </body>
 </html>
